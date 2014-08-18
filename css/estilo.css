@@ -1,0 +1,147 @@
+/* Página em geral*/
+div#pagina_geral {
+	margin:auto;
+	width: 700px;
+	text-align: left;
+	}
+ 
+ /*  Menu  */
+div#barra_de_menu {
+	height:30px;
+	width:100%;
+	text-transform:uppercase;
+	}
+	
+#barra_de_menu ul {
+	padding-left: 0;
+	margin-left: 18px;
+	margin-top: 3px;
+	background-color: transparent;
+	color: #FFF;
+	float: left;
+	width: 100%;
+	font-size:15px;
+	font-weight:bold;
+}
+
+#barra_de_menu ul li {
+	display: inline;
+}
+
+#barra_de_menu ul li a{
+	padding: 0.2em 0.8em;
+	text-decoration: none;
+	color: rgb(187,187,187);
+	float: left;
+	border-right: 1px solid gray;
+}
+
+#barra_de_menu ul li a:hover {
+	color: #FFF;
+}
+
+/*      Estilos do conteúdo      */
+
+
+/* Páginas principal e demais */
+#conteudo h3{
+	margin:50px 15px 20px 10px;
+	font-family: "Alegreya SC", verdana, helvetica, sans-serif;
+	font-size:30px;
+	font-weight: bold;
+	line-height:1em;
+	color:  rgb(115, 102, 57);
+}
+
+#conteudo p {
+	margin:10px;
+	margin-right:15px;
+	font-family: verdana, serif;
+	font-size:13px;
+	line-height:19px;
+	color: #FFF;
+	text-align:justify;
+	text-indent:30px;
+}
+
+#conteudo p .imagealign{
+	display: block;
+    margin: 2em auto;
+    overflow: hidden;
+    width: 700px;
+}
+#conteudo p .imagealign img{
+	display: block;
+	margin: 0 auto;
+	max-width: 700px;
+	width:65%;
+}
+
+/*Página "biografia" */
+
+#cashtop > img{
+	float:left;
+	width:25%;
+}
+
+/*Página "discografia" */
+#tabela {
+	margin:auto;
+	width: 630px;
+	font-family: verdana, sans-serif;
+}
+
+#tabela table {
+	width:100%;
+	text-align:left;
+	border:2px solid white;
+	border-radius: 5px;
+}
+#tabela th, #tabela td {
+	border:2px solid white;
+	padding:5px;
+	border-radius: 5px;
+}
+#tabela th {
+	text-align:center;
+}
+#tabela td {
+	padding-left:30px;
+}
+
+/* Página "Cadastro" */
+#cadastro {
+	margin:auto;
+	margin-top:40px;
+}
+#cadastro form {
+	margin:auto 37px;
+}
+#cadastro form table {
+	font-size:15px;
+	width:100%;
+	font-family: verdana, sans-serif;
+}
+
+/* Página "sugestões" */
+#sugestao {
+	width:330px;
+	margin:auto;
+	font-family: helvetica, sans-serif;
+}
+
+/*  Footer  */
+#footer {
+	height:210px;
+	text-align:left;
+	background: transparent url('../img/footer.bmp') center center no-repeat;
+} 
+
+#footer p {
+	text-align:center;
+	padding-top:80px;
+	font-family: verdana;
+	font-size:11px;
+	line-height:16px;
+	color: rgb(108,99,89);
+}

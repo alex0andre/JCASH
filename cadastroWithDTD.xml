@@ -1,0 +1,24 @@
+<?xml version="1.0"?> 
+<!DOCTYPE cadastro [
+<!ELEMENT cadastro (nomecomp,apelido, email,senha,confirmarsenha,sexo, datanasc)>
+<!ATTLIST cadastro id CDATA #REQUIRED>
+<!ELEMENT nomecomp (#PCDATA)>
+<!ELEMENT apelido (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT senha (#PCDATA)>
+<!ELEMENT confirmarsenha (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>
+<!ELEMENT datanasc (#PCDATA)>
+
+]>
+
+<cadastro id="2505"> 
+    <nomecomp>José Francisco</nomecomp> 
+    <apelido> Zé </apelido>
+    <email>Jose.f@hotmail.com</email>
+    <senha> 46582</senha>
+    <confirmarsenha>46582<confirmarsenha>
+    <sexo> masculino </sexo>
+    <datanasc> 28 11 1992 </datanasc>
+		
+</cadastro>
