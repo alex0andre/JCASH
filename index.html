@@ -1,79 +1,258 @@
 <!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	
-	<!-- Título do site -->
-	<title>Johnny Cash Legend</title>
-	
-	<!-- Link para folha de estilos -->
-	<link rel="stylesheet" type="text/css" href="css/estilo.css" />
-	
-	<!-- Estilização interna -->
-	<style type="text/css">
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>CASH</title>
 		
-	body {
-	text-align: center;
-	background: #000 url('img/top.bmp') top center no-repeat scroll;
-	margin-top:370px;
-	margin-bottom:auto;
-	color:#FFF;
-	}
-	A:link {
-	color:gray;
-	text-decoration: none;
-	}
-	A:visited {
-	color:gray;
-	text-decoration: none;
-	}
-	A:active {
-	color:gray;
-	text-decoration: none;
-	}
-	A:hover {
-	text-decoration: underline;
-	color:#FFF;
-	}
-	</style>
-</head>
-<body>
-	
-	<div id='pagina_geral'>
-	
-	<!-------------------- HEADER -------------------->
-	<!-- Definição da barra de menu -->
-	<div id='barra_de_menu'>
-	<ul>
-	<li><a href="index.html">Início</a></li>
-	<li><a href="pags/biografia.html">Biografia</a></li>
-	<li><a href="pags/discografia.html">Discografia</a></li>
-	<li><a href="pags/cadastro.html">Cadastro</a></li>
-	<li><a href="pags/sugestoes.html">Sugestões</a></li>
-	</ul>
-	</div>	
-	
-	<!-------------------- PARTE DO CONTEÚDO -------------------->
-	<div id='conteudo'>
+		<!-- CSS -->
+		<link rel="stylesheet" media="all" href="css/style.css"/>
+		
+		<!-- SKIN -->
+		<link rel="stylesheet" media="all" href="css/skin.css"/>
+		
+		<!-- JQUERY -->
+		<script src="js/jquery-1.11.1.min.js"></script>
 
-	<h3>Johnny Cash</h3><hr>
-	<p>John R. Cash, mais conhecido como Johnny Cash, (Kingsland, 26 de fevereiro de 1932 — Nashville, 12 de setembro de 2003) foi um cantor e compositor norteamericano de música country, conhecido por seus fãs como "O Homem de Preto". Em uma carreira que durou quase cinco décadas ele foi para muitas pessoas a personificação do country. Sua voz sepulcral e o distintivo som "boom chicka boom" de sua banda de apoio "Tennessee Two" são algumas de suas "marcas registradas".</p>
-	<center> <iframe width="420" height="315" src="http://www.youtube.com/embed/SmVAWKfJ4Go" frameborder="0" allowfullscreen></iframe> </center>
-	<h4>"O homem de preto"</h4>
-	<p>De 1969 a 1971 Cash estrelou seu próprio programa televisivo pela rede ABC, que contava com a participação de vários astros da música, como Neil Young e Bob Dylan. Cash apoiava o trabalho de Dylan antes mesmo de conhecê-lo, e os dois tornaram-se amigos depois de morarem na mesma vizinhança de Woodstock, em Nova Iorque, no final dos anos 60. Em complemento às aparições de Dylan em seu programa, Cash gravou um dueto com ele em Nashville Skyline, além de escrever o encarte do álbum vencedor do Grammy. Outro artista que recebeu grande apoio do The Johnny Carson Show foi o compositor Kris Kristofferson. Durante uma apresentação ao vivo da "Sunday Morning Coming Down" de Kristofferson, Cash provocou polêmica ao se recusar a mudar um dos versos para satisfazer os executivos da emissora, preservando intacta a canção com suas referências controversas à maconha: "On the Sunday morning sidewalks / Wishin', Lord, that I was stoned" ("Nas calçadas das manhãs de domingo / Pedindo, por Deus, que eu esteja chapado").</p>
-	<p>Imensamente popular e uma figura imponentemente alta, no começo dos anos 70 ele havia conseguido cristalizar sua imagem pública. Cash se apresentava na maioria das vezes vestido de preto, calçando uma bota igualmente preta de cano longo, o que o levou a ser apelidado de "O Homem de Preto". Esta vestimenta era um total contraste às usadas pela maioria dos astros country da época - chapéus, roupas claras e botas de caubói. Em 1971 Cash compôs a música "Man In Black" para tentar explicar um pouco seu estilo: "I wear the black for the poor and the beaten down, / Livin' in the hopeless, hungry side of town, / I wear it for the prisoner who has long paid for his crime, / But is there because he's a victim of the times" ("Eu me visto de preto pelos pobres e oprimidos/ Que vivem no lado faminto e sem esperanças da cidade / Eu me visto assim pelo prisioneiro que há muito pagou por seu crime / Mas está ali pois é uma vítima dos tempos").</p>
-	<p>Em meados dos anos 70 a popularidade e as canções de sucesso de Cash começaram a diminuir, mas ainda assim sua autobiografia, intitulada Man in Black (de 1975), vendeu 1,3 milhão de cópias. Sua amizade com Billy Graham levou à produção de um filme sobre a vida de Jesus chamado The Gospel Road, que Cash co-escreveu e narrou. Ele continuou a aparecer na televisão, estrelando um especial de Natal na CBS durante os anos 70.
-	</br><span class="imagealign"><img src="http://a4.ec-images.myspacecdn.com/images02/116/7f194a7fe5cf4b1bb1c898f05dbfd872/l.jpg" alt="O homem de preto" /></span>
-	</p>
+		<!-- PLUGINS DE VALIDAÇÃO -->
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			$('#data').mask('99/99/9999');
+			$('#phone').mask('(99) 9999-9999');
+			});
+		</script>
+
+		<script src="js/css3-mediaqueries.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/tabs.js"></script>
+		
+		<!-- Google Geolocation API -->		
+    	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+		<!-- Smooth Scroll -->
+		<script src="js/smooth.scroll.js"></script>
+
+		<!-- Flex Slider -->
+		<link rel="stylesheet" href="css/flexslider.css" >
+		<script src="js/jquery.flexslider-min.js"></script>
+
+		<!-- Superfish -->
+		<link rel="stylesheet" media="screen" href="css/superfish.css" /> 
+		<script  src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+		<script  src="js/superfish-1.4.8/js/superfish.js"></script>
+		<script  src="js/superfish-1.4.8/js/supersubs.js"></script>
+		
+		<!-- GOOGLE FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
+				
+	</head>
 	
-	</div>	
-	
-	</div>
-	<!-------------------- FOOTER -------------------->
-	<div id='footer'>
-		<p>Copyright ©2013 Johnny Cash Legend. Todos os direitos reservados.</br>
-		Feito por Alex Pimentel, Jairo Martins e Marcus Albuquerque.
-		</p>
-	</div>
-</body>
+	<body>
+		<!-- CABEÇALHO -->
+		<header class="clearfix">
+			<div class="wrapper clearfix" id="inicio">
+				<a href="index.html" id="logo"><img  src="img/logo.png" alt="Mockingbird"></a>
+				<nav>
+					<ul id="nav" class="sf-menu">
+						<li><a href="#albuns">PRINCIPAIS ÁLBUNS</a></li> 
+						<li><a href="#sobre">SOBRE</a></li>
+						<li><a href="#contato">CONTATO</a></li>
+					</ul>
+					<div id="combo-holder"></div>
+				</nav>
+			</div>
+		</header>
+		<!-- CORPO PRINCIPAL -->
+		<div id="main">	
+			<div class="wrapper">
+
+				<!-- SLIDER -->
+				<div id="slider-holder" class="clearfix">
+					
+			        <div class="flexslider home-slider">
+					  <ul class="slides">
+					    <li>
+					      <img src="img/slides/001.jpg"/>
+					    </li>
+					    <li>
+					      <img src="img/slides/002.jpg"/>
+					    </li>
+					    <li>
+					      <img src="img/slides/003.jpg"/>
+					    </li>
+					  </ul>
+					</div>
+		        	
+		        	<div class="home-slider-clearfix "></div>
+		        	
+		        	<!-- HEADLINE -->
+		        	<div id="headline">
+		        		<h1>THE IMORTAL, <br/> CASH</h1>
+						<p>Eu visto o preto pelo pobre e oprimido,<br>
+							Vivendo no lado faminto e sem esperança da cidade,<br>
+							Eu o visto pelo preso que há muito tempo já pagou pelo seu crime,<br>
+							Mas está lá porque ele é uma vítima dos tempos</p>	
+		        		<em id="corner"></em>
+		        	</div>
+				</div>
+				<!-- PORTFÓLIO -->
+	        	<div class="home-block" id="albuns">
+	        		<h2 class="home-block-heading"><span>PRINCIPAIS ÁLBUNS</span></h2>
+	        		<div class="one-third-thumbs clearfix" >
+	        			<figure>
+		        			<figcaption>
+	        					<strong>Now Here's Johnny Cash</strong>
+	        					<span>Now Here's Johnny Cash é o décimo álbum de estúdio do cantor Johnny Cash, lançado a 21 de outubro de 1961.</span>
+			        		</figcaption>
+			        		<a href="http://en.wikipedia.org/wiki/Now_Here%27s_Johnny_Cash/"  class="thumb"><img src="img/albuns/NowHeresJohnnyCash.jpg" alt="Now Here's Johnny Cash" /></a>
+		        		</figure>		        		
+		        		<figure>
+		        			<figcaption>
+	        					<strong>At Folsom Prison</strong>
+	        					<span>At Folsom Prison é um álbum ao vivo de Johnny Cash, lançado em 1968.1</span>
+			        		</figcaption>
+			        		<a href="http://en.wikipedia.org/wiki/At_Folsom_Prison"  class="thumb"><img src="img/albuns/AtFolsomPrison.jpg" alt="At Folsom Prison" /></a>
+		        		</figure>		        		
+		        		<figure class="last">
+		        			<figcaption>
+	        					<strong>The Fabulous Johnny Cash</strong>
+	        					<span>The Fabulous Johnny Cash é o terceiro álbum de estúdio do cantor Johnny Cash, lançado em 1958.</span>
+			        		</figcaption>			        		
+			        		<a href="http://en.wikipedia.org/wiki/The_Fabulous_Johnny_Cash"  class="thumb"><img src="img/albuns/TheFabulousJohnnyCash.jpg" alt="The Fabulous Johnny Cash" /></a>
+		        		</figure>		        		
+		        		<figure>
+		        			<figcaption>
+	        					<strong>American IV: The Man Comes Around</strong>
+	        					<span>American IV: The Man Comes Around é o quarto álbum da série American por Johnny Cash, lançado em 2002. A maior parte das faixas são covers executados por Cash, em seu próprio estilo,</span>
+			        		</figcaption>			        		
+			        		<a href="http://en.wikipedia.org/wiki/American_IV:_The_Man_Comes_Around"  class="thumb"><img src="img/albuns/TheManComesAround.jpg" alt="American IV: The Man Comes Around" /></a>
+		        		</figure>		        		
+		        		<figure>
+		        			<figcaption>
+	        					<strong>At San Quentin</strong>
+	        					<span>At San Quentin é 31º album lançado por Johnny Cash, gravado ao vivo em San Quentin State Prison em 24 de fevereiro de 1969 e lançado em 04 de junho do mesmo ano.</span>
+			        		</figcaption>
+			        		
+			        		<a href="http://en.wikipedia.org/wiki/At_San_Quentin"  class="thumb"><img src="img/albuns/AtSanQuentin.jpg" alt="At San Quentin" /></a>
+		        		</figure>		        		
+		        		<figure class="last">
+		        			<figcaption>
+	        					<strong>Man in Black</strong>
+	        					<span>Man in Black é 38º o álbum gravado pelo cantor country Johnny Cash, lançado pela Columbia Records em 1971</span>
+			        		</figcaption>			        		
+			        		<a href="http://en.wikipedia.org/wiki/Man_in_Black_(album)"  class="thumb"><img src="img/albuns/ManinBlack.jpg" alt="Man in Black" /></a>
+		        		</figure>
+	        		</div>
+	        	</div>
+	        	<!-- SOBRE -->
+	        	<div class="home-block" id="sobre">
+	        		<h2 class="home-block-heading"><span>SOBRE</span></h2>
+	        		<div class="one-fourth-thumbs clearfix">
+						<h2>História</h2><br/>
+						<p style="font-size:16px;">John R. Cash,1 mais conhecido como Johnny Cash, (Kingsland, 26 de fevereiro de 1932 — Nashville, 12 de setembro de 2003) foi um cantor e compositor norte-americano de música country, conhecido por seus fãs como "O Homem de Preto". Em uma carreira que durou quase cinco décadas ele foi para muitas pessoas a personificação do country. Sua voz sepulcral e o distintivo som "boom chicka boom" de sua banda de apoio "Tennessee Two" são algumas de suas "marcas registradas".
+						</p><br>
+						<p>De 1969 a 1971 Cash estrelou seu próprio programa televisivo pela rede ABC, que contava com a participação de vários astros da música, como Neil Young e Bob Dylan. Cash apoiava o trabalho de Dylan antes mesmo de conhecê-lo, e os dois tornaram-se amigos depois de morarem na mesma vizinhança de Woodstock, em Nova Iorque, no final dos anos 60. Em complemento às aparições de Dylan em seu programa, Cash gravou um dueto com ele em Nashville Skyline, além de escrever o encarte do álbum vencedor do Grammy. Outro artista que recebeu grande apoio do The Johnny Carson Show foi o compositor Kris Kristofferson. Durante uma apresentação ao vivo da "Sunday Morning Coming Down" de Kristofferson, Cash provocou polêmica ao se recusar a mudar um dos versos para satisfazer os executivos da emissora, preservando intacta a canção com suas referências controversas à maconha: "On the Sunday morning sidewalks / Wishin', Lord, that I was stoned" ("Nas calçadas das manhãs de domingo / Pedindo, por Deus, que eu esteja chapado").</p>
+						<p>Imensamente popular e uma figura imponentemente alta, no começo dos anos 70 ele havia conseguido cristalizar sua imagem pública. Cash se apresentava na maioria das vezes vestido de preto, calçando uma bota igualmente preta de cano longo, o que o levou a ser apelidado de "O Homem de Preto". Esta vestimenta era um total contraste às usadas pela maioria dos astros country da época - chapéus, roupas claras e botas de caubói. Em 1971 Cash compôs a música "Man In Black" para tentar explicar um pouco seu estilo: "I wear the black for the poor and the beaten down, / Livin' in the hopeless, hungry side of town, / I wear it for the prisoner who has long paid for his crime, / But is there because he's a victim of the times" ("Eu me visto de preto pelos pobres e oprimidos/ Que vivem no lado faminto e sem esperanças da cidade / Eu me visto assim pelo prisioneiro que há muito pagou por seu crime / Mas está ali pois é uma vítima dos tempos").</p>
+						<p>Em meados dos anos 70 a popularidade e as canções de sucesso de Cash começaram a diminuir, mas ainda assim sua autobiografia, intitulada Man in Black (de 1975), vendeu 1,3 milhão de cópias. Sua amizade com Billy Graham levou à produção de um filme sobre a vida de Jesus chamado The Gospel Road, que Cash co-escreveu e narrou. Ele continuou a aparecer na televisão, estrelando um especial de Natal na CBS durante os anos 70.</br>
+
+
+						<h2>Curiosidades</h2>
+						<br/>
+						<div class="dev">
+	        				<img src="img/matanza.jpg" class="fotodev" style="display:block; float:left;" id="imgmat">
+	        					<div id="definicao1">
+	        						<h4>To Hell With Johnny Cash (2005)</h4><br />
+	        						<p>A banda brasileira Matanza lançou em 2005 o álbum To Hell With Johnny Cash, só de covers em homenagem a Johnny Cash de quem eles são grandes fãs e atribuem grande influencia em seu estilo musical.</p>
+	        					</div>
+	        			</div>
+
+	        			<div class="dev">
+	        				<img src="img/hurt.jpg" class="fotodev" style="display:block; float:left;" id="imghur">
+	        					<div id="definicao2">
+	        						<h4>Hurt, melhor clipe!</h4><br />
+	        						<p>Oito anos após sua morte, seu videoclipe "Hurt", uma reinterpretação do sucesso do Nine Inch Nails, foi considerado pela New Musical Express (NME), uma das mais tradicionais e importantes revistas de músicas do mundo, como o melhor videoclipe de todos os tempos.</p>
+	        					</div>
+	        			</div>
+	        			<div class="dev">
+	        				<img src="img/walktheline.jpg" class="fotodev" style="display:block; float:left;" id="imgwal">
+	        					<div id="definicao3">
+	        						<h4>"Walk the Line" (2005), o filme.</h4><br />
+	        						<p>Em 2005 foi lançado o filme Walk the Line (no Brasil Johnny & June) com Joaquin Phoenix no papel de Cash e Reese Witherspoon como June Carter, dirigido por James Mangold, uma biografia filmada. Filme que recebeu o Oscar de melhor atriz para Witherspoon e uma indicação de melhor ator para Joaquin Phoenix.</p>
+	        					</div>
+	        			</div>
+	        		</div>
+	        	</div>
+	        	<!-- CONTATO -->
+	        	<div class="home-block" id="contato">
+	        		<h2 class="home-block-heading"><span>CONTATO</span></h2>
+	        		<div id="cont1">
+	        			<h4>CADASTRE-SE</h4><br />
+						<form class="cmxform" id="signupForm" method="get" action="">
+							<table>
+								<tr>
+									<td>Nome:</td>
+									<td><input id="Uname" name="Uname" type="text" /></td>
+								</tr>
+								<tr>
+									<td>Data de nascimento:</td>
+									<td><input type="text" id="data" required/></td>
+								</tr>
+								<tr>
+									<td>Telefone:</td>
+									<td><input type="text" id="phone" required/></td>
+								</tr>
+								<tr>
+									<td>E-mail:</td>
+									<td><input id="cemail" type="email" name="email" required /></td>
+								</tr>
+								<tr>
+									<td>Senha (mínimo de 3 digitos):</td>
+									<td><input id="password" name="password" type="password" /></td>
+								</tr>
+								<tr>
+									<td>Confirmar Senha:</td>
+									<td><input id="confirm_password" name="confirm_password" type="password" /></td>
+								</tr>
+								<tr>
+									<td><input type="submit" value="Enviar"/></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+					<div>
+						<h4>ENVIE-NOS UM EMAIL!</h4><br />
+						<form class="cmxform" id="commentForm" method="get" action="">
+							<table>
+								<tr>
+									<td>Nome:</td>
+									<td><input id="cname" name="name" minlength="2" type="text" required /></td>
+								</tr>
+								<tr>
+									<td>E-mail:</td>
+									<td><input id="cemail" type="email" name="email" required /></td>
+								</tr>
+								<tr>
+									<td>Comentário:</td>
+									<td><input type="text" id="ccomment" name="comment" required></td>
+								</tr>
+								<tr>
+									<td><input type="submit" value="Enviar"/></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+	        	</div>
+	        	<a href="#inicio" class="more-link right">TOPO</a>
+			</div>
+		</div>	
+		<!-- Início do footer -->
+		<footer>
+		<h3>Voce esta acessando de=></h3> 
+		
+		 <div id="map-canvas"></div>    
+			<div class="wrapper">		
+				<div class="left">Copyright ©2014. TODOS OS DIREITOS RESERVADOS.</div>
+		</footer>
+	</body>
 </html>
